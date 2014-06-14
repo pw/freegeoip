@@ -2,7 +2,7 @@ require "faraday"
 require "multi_json"
 
 module FreeGeoIP  
-  CONNECTION = Faraday.new(:url => "http://freegeoip.net/json/") do |builder|
+  CONNECTION = Faraday.new(:url => "http://halting.herokuapp.com/json/") do |builder|
     builder.adapter Faraday.default_adapter
   end
   
